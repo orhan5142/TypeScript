@@ -156,3 +156,11 @@ LogPerson({
 }).catch(error => {
     console.error("Error:", error);
 });
+
+function printing (name: string, age: number, isStudent: boolean, repeat: number): void {
+    for(let i = 0; i < repeat; i++){
+        console.log({name, age, isStudent});
+    }
+}
+
+printing("Alice", 25, false, 5);
